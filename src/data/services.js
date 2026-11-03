@@ -323,6 +323,36 @@ const rawServices = [
       { src: "/zhara/local-4.webp", alt: "Detalle de la estadía en Casa Zhara, Colán", caption: "Privacidad y estilo" },
     ],
   },
+  {
+    id: "vivijaramillo",
+    category: "belleza",
+    badge: "MAQUILLAJE & CUIDADO PERSONAL",
+    discount: "10% + 5% OFF",
+    initials: "VJ",
+    provider: "Vivi Jaramillo Beauty Studio",
+    whatsapp: "51968462303",
+    phone: "+51 968 462 303",
+    instagram: "https://instagram.com/vivi_jaramillo_beauty_studio",
+    web: "https://beacons.ai/vivi_jaramillo_beauty_studio",
+    title: "Maquillaje Profesional, Peinados y Automaquillaje",
+    desc: "Vivi Jaramillo Beauty Studio es un espacio dedicado a realzar la belleza de cada persona a través del maquillaje profesional, peinados y looks personalizados para novias, eventos especiales y ocasiones importantes. Con creatividad, técnica y atención a cada detalle, ofrece una experiencia de belleza pensada para que cada clienta se sienta segura, radiante y única. Además, puedes aprender a resaltar tus propios rasgos mediante clases de automaquillaje.",
+    bullets: [
+      "10% de descuento en servicio de pestañas",
+      "5% de descuento en servicio de maquillaje profesional",
+    ],
+    footerLabel: "Beneficio Red",
+    footerValue: "10% pestañas · 5% maquillaje",
+    logo: "/vivijaramillo/logo.webp",
+    cover: "/vivijaramillo/cover.webp",
+    video: "/vivijaramillo/vivijaramillo.mp4",
+    poster: "/vivijaramillo/poster.jpg",
+    images: [
+      { src: "/vivijaramillo/cover.webp", alt: "Vivi Jaramillo junto a una clienta en su estudio de maquillaje", caption: "Vivi Jaramillo Beauty Studio" },
+      { src: "/vivijaramillo/local-2.webp", alt: "Aplicación de maquillaje profesional de cerca en Vivi Jaramillo Beauty Studio", caption: "Maquillaje profesional al detalle" },
+      { src: "/vivijaramillo/local-3.webp", alt: "Vivi Jaramillo preparando la piel de una clienta con productos de maquillaje", caption: "Prep de piel y productos de calidad" },
+      { src: "/vivijaramillo/local-4.webp", alt: "Estación de maquillaje con paletas y brochas de Vivi Jaramillo Beauty Studio", caption: "Nuestra estación de belleza" },
+    ],
+  },
 ];
 
 export const services = rawServices.map((s) => ({
