@@ -353,6 +353,36 @@ const rawServices = [
       { src: "/vivijaramillo/local-4.webp", alt: "Estación de maquillaje con paletas y brochas de Vivi Jaramillo Beauty Studio", caption: "Nuestra estación de belleza" },
     ],
   },
+  {
+    id: "demaryfuego",
+    category: "gastronomia",
+    badge: "RESTAURANTE",
+    discount: "15% OFF",
+    initials: "MF",
+    provider: "De Mar y Fuego",
+    whatsapp: "51922543431",
+    phone: "+51 922 543 431",
+    facebook: "https://www.facebook.com/dmaryfuegopiura",
+    title: "Cocina Marina, Criolla y Selvática para Compartir",
+    desc: "De Mar y Fuego es un restaurante en Piura que combina la riqueza de la gastronomía marina, criolla y selvática, rescatando los sabores y las tradiciones que forman parte de nuestra cultura piurana. Disfruta de una variedad de platos preparados para compartir en familia y con amigos, donde cada sabor rinde homenaje a nuestras raíces y a la pasión por la buena cocina.",
+    bullets: [
+      "15% de descuento en la carta de comidas de lunes a jueves",
+      "Cocina marina, criolla y selvática para compartir",
+    ],
+    footerLabel: "Beneficio Red",
+    footerValue: "15% en carta · Lun a Jue",
+    logo: "/demaryfuego/logo.webp",
+    cover: "/demaryfuego/cover.webp",
+    video: "/demaryfuego/demaryfuego.mp4",
+    poster: "/demaryfuego/poster.jpg",
+    images: [
+      { src: "/demaryfuego/cover.webp", alt: "Parrilla marina de De Mar y Fuego con pulpo, conchas y mariscos", caption: "Déjate sorprender por la tradición" },
+      { src: "/demaryfuego/local-2.webp", alt: "Ceviche de pescado con chicharrón de pota y chifles de De Mar y Fuego", caption: "Ceviche con sabor piurano" },
+      { src: "/demaryfuego/local-3.webp", alt: "Tiradito de pulpo con palta y salsa de De Mar y Fuego", caption: "Tiradito de pulpo al detalle" },
+      { src: "/demaryfuego/local-4.webp", alt: "Bandeja de tres niveles con arroz, chicharrón de pescado y cebiche de De Mar y Fuego", caption: "Para compartir en familia" },
+      { src: "/demaryfuego/local-5.webp", alt: "Tacu tacu con huevo y salsa criolla de De Mar y Fuego", caption: "Sabores auténticos, como en casa" },
+    ],
+  },
 ];
 
 export const services = rawServices.map((s) => ({
