@@ -29,8 +29,20 @@ export default function SlidingTabs({
       setPill({ left: btn.offsetLeft, width: btn.offsetWidth, ready: true });
     };
     update();
+    const raf = requestAnimationFrame(update);
+    let observer;
+    if (typeof ResizeObserver !== "undefined" && containerRef.current) {
+      observer = new ResizeObserver(update);
+      observer.observe(containerRef.current);
+      Object.values(btnRefs.current).forEach((el) => el && observer.observe(el));
+    }
+    if (document.fonts?.ready) document.fonts.ready.then(update);
     window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
+    return () => {
+      cancelAnimationFrame(raf);
+      observer?.disconnect();
+      window.removeEventListener("resize", update);
+    };
   }, [activeKey]);
 
   return (
