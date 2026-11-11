@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import CountUp from "../components/CountUp";
 import useTypewriter from "../hooks/useTypewriter";
 
 const faqs = [
-  { q: "¿Tiene algún coste el uso de la plataforma para los clientes de JyS?", a: "No. El acceso a JyS Conectados es un beneficio intrínseco y 100% gratuito para todas las empresas que mantengan servicios contables, tributarios, legales o laborales vigentes con JYS Asesoría y Capacitación E.I.R.L." },
+  { q: "¿Tiene algún coste el uso de la plataforma para los clientes de JyS?", a: "No. El acceso a JyS Conectados es un beneficio intrínseco y 100% gratuito para todas las empresas que mantengan servicios contables, tributarios, legales o laborales vigentes con JyS Asesoría y Capacitación E.I.R.L." },
   { q: "¿Qué requisitos debe cumplir una empresa externa para ofrecer servicios?", a: "Debe contar con RUC activo y habido, al menos 2 años de experiencia continua, cartas de recomendación verificadas y ofrecer un descuento preferencial comprobable frente a su tarifario público." },
   { q: "¿Cómo se valida la credencial corporativa al solicitar un beneficio?", a: "Cada afiliado cuenta con código QR e identificador único. Al contactar al aliado vía WhatsApp o correo oficial, este contrasta el código en la base de datos de JyS en menos de un minuto." },
   { q: "¿Qué ocurre si un aliado no respeta el descuento o las condiciones?", a: "JyS Conectados cuenta con mesa de mediación directa. En caso de incumplimiento comprobado, la empresa es suspendida y el cliente recibe asesoramiento sin costo." },
@@ -17,10 +16,7 @@ export default function ComoFunciona() {
   const scriptWord = useTypewriter(HERO_WORDS);
   return (
     <div className="w-full overflow-hidden">
-      {/* Ambient glow - reduced to avoid layout thrashing */}
       <div className="relative w-full">
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[380px] bg-gradient-to-tr from-primary/10 via-secondary-container/20 to-transparent blur-3xl pointer-events-none rounded-full animate-float-slow" aria-hidden></div>
-
         {/* HERO - Persuade mode */}
         <section aria-labelledby="hero-title" className="relative w-full overflow-hidden">
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 lg:min-h-[70vh] pb-10 lg:pb-12">
@@ -54,7 +50,7 @@ export default function ComoFunciona() {
                   </span>
                 </h1>
                 <p className="text-[clamp(17px,1.5vw,21px)] leading-7 text-tertiary max-w-[min(92%,38rem)] mb-6">
-                  La extensión oficial de <strong className="text-on-surface font-semibold">JYS Asesoría y Capacitación</strong> que potencia la sinergia comercial entre clientes calificados, firmas auditoras y aliados estratégicos de primer nivel.
+                  La extensión oficial de <strong className="text-on-surface font-semibold">JyS Asesoría y Capacitación</strong> que potencia la sinergia comercial entre clientes calificados, firmas auditoras y aliados estratégicos de primer nivel.
                 </p>
                 <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto mb-10">
                   <Link to="/catalogo" className="btn-shine group cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-semibold text-[16px] shadow-md hover:bg-primary transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring">
@@ -63,19 +59,6 @@ export default function ComoFunciona() {
                   <a href="#como-participar" className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[44px] rounded-xl bg-surface-container-high text-on-surface font-semibold text-[16px] hover:bg-surface-container-highest transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring">
                     <span className="material-symbols-outlined text-lg text-primary" aria-hidden>handshake</span> Quiero Ofrecer Mis Servicios
                   </a>
-                </div>
-                {/* Metric cards - Trust & Authority badge hover */}
-                <div className="grid grid-cols-3 gap-3 w-full pt-2 animate-fadeUp delay-100">
-                  {[
-                    { icon: "verified_user", end: 50, prefix: "+", suffix: "", label: "Convenios activos aprobados", col: "text-primary" },
-                    { icon: "savings", end: 35, prefix: "", suffix: "%", label: "Ahorro medio corporativo", col: "text-secondary" },
-                    { icon: "shield", end: 100, prefix: "", suffix: "%", label: "Validación jurídica JyS", col: "text-secondary-container" },
-                  ].map((b) => (
-                    <div key={b.label} className="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container shadow-sm flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default">
-                      <div className={`flex items-center gap-1 ${b.col} mb-1`}><span className="material-symbols-outlined text-base" aria-hidden>{b.icon}</span><CountUp end={b.end} prefix={b.prefix} suffix={b.suffix} className="font-bold text-on-surface text-[20px]" /></div>
-                      <span className="text-[13px] font-bold text-tertiary leading-snug">{b.label}</span>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>
@@ -92,17 +75,6 @@ export default function ComoFunciona() {
                 height={700}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent lg:hidden" aria-hidden></div>
-              <div className="absolute bottom-5 left-5 right-5 sm:left-6 sm:right-6 bg-surface-container-lowest/95 backdrop-blur-md p-3.5 rounded-xl shadow-lg flex items-center justify-between border border-white/30">
-                <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0"><span className="material-symbols-outlined" aria-hidden>badge</span></div>
-                  <div className="truncate"><div className="font-bold text-on-surface text-[15px] truncate">Credencial Virtual JyS</div><div className="text-[13px] text-tertiary">Acceso Multicategoría Inmediato</div></div>
-                </div>
-                <span className="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[13px] font-bold shrink-0 border border-secondary-fixed-dim">ACTIVO</span>
-              </div>
-              <div className="absolute top-5 right-5 bg-surface-container-lowest/95 backdrop-blur-md p-3 rounded-xl shadow-xl hidden sm:flex items-center gap-3 border border-surface-container animate-pulseSoft">
-                <div className="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center"><span className="material-symbols-outlined text-sm font-bold" aria-hidden>trending_up</span></div>
-                <div><div className="text-[13px] text-tertiary uppercase tracking-wider font-semibold">Red en Expansión</div><div className="font-bold text-on-surface text-[16px]">+1,200 Ejecutivos</div></div>
-              </div>
             </div>
           </div>
 
@@ -127,7 +99,7 @@ export default function ComoFunciona() {
             <div className="max-w-2xl">
               <div className="text-[13px] text-primary uppercase font-bold tracking-widest mb-1">Arquitectura de Confianza</div>
               <h2 id="pilares-title" className="font-bold text-[30px] lg:text-[34px] text-on-surface">¿En qué consiste JyS Conectados?</h2>
-              <p className="text-[17px] text-tertiary mt-2">No somos un tablón público de anuncios. Diseñamos un club empresarial cerrado que une la oferta y la demanda corporativa con el sello de auditoría de JYS Asesoría y Capacitación.</p>
+              <p className="text-[17px] text-tertiary mt-2">No somos un tablón público de anuncios. Diseñamos un club empresarial cerrado que une la oferta y la demanda corporativa con el sello de auditoría de JyS Asesoría y Capacitación.</p>
             </div>
             <div className="flex items-center gap-2 text-on-surface-variant text-[14px] font-semibold"><span className="material-symbols-outlined text-secondary text-base" aria-hidden>verified</span>Modelo de Relacionamiento B2B Exclusivo</div>
           </div>
@@ -229,15 +201,15 @@ export default function ComoFunciona() {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-[clamp(0.75rem,1.5vw,1.25rem)]">
             {[
-              { ic: "terminal", t: "Tecnología & TI", n: "2 convenios", bg: "bg-secondary-fixed text-secondary" },
+              { ic: "terminal", t: "Tecnología & TI", n: "2 convenios", bg: "bg-secondary-fixed text-primary" },
               { ic: "campaign", t: "Marketing & Branding", n: "1 convenio", bg: "bg-tertiary-fixed text-tertiary" },
               { ic: "architecture", t: "Diseño & Construcción", n: "2 convenios", bg: "bg-tertiary-fixed text-tertiary" },
               { ic: "domain", t: "Inmobiliaria", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
               { ic: "visibility", t: "Salud & Óptica", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
-              { ic: "savings", t: "Finanzas & Créditos", n: "1 convenio", bg: "bg-secondary-fixed text-secondary" },
+              { ic: "savings", t: "Finanzas & Créditos", n: "1 convenio", bg: "bg-secondary-fixed text-primary" },
               { ic: "restaurant", t: "Gastronomía", n: "1 convenio", bg: "bg-tertiary-fixed text-tertiary" },
               { ic: "hotel", t: "Alojamiento & Turismo", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
-              { ic: "child_care", t: "Juego & Familia", n: "1 convenio", bg: "bg-secondary-fixed text-secondary" },
+              { ic: "child_care", t: "Juego & Familia", n: "1 convenio", bg: "bg-secondary-fixed text-primary" },
             ].map((c) => (
               <Link key={c.t} to="/catalogo" className="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200 flex flex-col items-center text-center focus-ring">
                 <div className={`w-12 h-12 rounded-full ${c.bg} flex items-center justify-center mb-2 border border-black/5`}><span className="material-symbols-outlined" aria-hidden>{c.ic}</span></div>
@@ -248,30 +220,10 @@ export default function ComoFunciona() {
         </div>
       </section>
 
-      {/* Garantía + FAQ - audit score improvement: semantic, focus, contrast */}
+      {/* FAQ */}
       <section className="w-full py-[clamp(2rem,4vw,4rem)] bg-surface-container-low">
         <div className="w-full px-[clamp(18px,2.95vw,50px)]">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-[clamp(1.25rem,3vw,2rem)] items-start">
-            <div className="lg:col-span-5 bg-gradient-to-br from-inverse-surface to-inverse-surface/90 text-inverse-on-surface p-6 rounded-2xl shadow-xl flex flex-col justify-between relative overflow-hidden min-h-[520px] border border-white/10" data-reveal>
-              <div className="absolute -right-16 -top-16 w-56 h-56 bg-secondary-container/10 rounded-full blur-2xl" aria-hidden></div>
-              <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/20 text-secondary-fixed-dim text-[13px] font-bold uppercase tracking-wider mb-6 border border-white/10"><span className="material-symbols-outlined text-secondary-fixed-dim text-lg" aria-hidden>stars</span>Sello Oficial de Calidad y Solvencia</div>
-                <h3 className="font-bold text-[26px] leading-tight mb-3">Garantía Corporativa JYS Asesoría y Capacitación</h3>
-                <p className="text-[16px] text-tertiary-fixed-dim mb-6 leading-relaxed">Cada convenio publicado ha superado un filtro estricto de auditoría tributaria, verificación de reclamos ante INDECOPI y solvencia técnica. No avalamos intermediarios desconocidos; defendemos la tranquilidad de su empresa.</p>
-                <ul className="space-y-2 mb-8">
-                  {["Firma de Convenio Bilateral de Calidad de Servicio (SLA)", "Canal de arbitraje directo y resolución exprés por JyS", "Actualización quincenal de beneficios vigentes"].map((t) => (
-                    <li key={t} className="flex items-center gap-2 text-[14px]"><span className="material-symbols-outlined text-secondary-fixed-dim text-lg" aria-hidden>check_box</span>{t}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-surface-container-highest/10 -mx-6 -mb-6 p-6 border-t border-white/10">
-                <div className="text-secondary-fixed font-bold text-[14px] mb-1">¿Deseas postular o necesitas una credencial VIP?</div>
-                <p className="text-tertiary-fixed-dim text-[14px] mb-3">Comunícate de inmediato con el comité evaluador de alianzas.</p>
-                <Link to="/afiliate" className="cursor-pointer inline-flex items-center justify-center gap-2 w-full py-3 min-h-[44px] rounded-xl bg-secondary-container text-on-secondary-container font-bold text-[16px] hover:bg-secondary-fixed-dim transition-colors duration-200 focus-ring">Ir al Centro de Afiliación y Contacto <span className="material-symbols-outlined text-lg" aria-hidden>arrow_forward</span></Link>
-              </div>
-            </div>
-
-            <div className="lg:col-span-7 flex flex-col gap-3" data-reveal data-reveal-delay="120">
+          <div className="flex flex-col gap-3" data-reveal>
               <div className="mb-2"><span className="text-[13px] text-primary font-bold uppercase tracking-wider">Despejando Inquietudes</span><h3 className="font-bold text-[26px] text-on-surface">Preguntas Clave sobre JyS Conectados</h3></div>
               {faqs.map((f, i) => {
                 const isOpen = openIdx === i;
@@ -296,15 +248,14 @@ export default function ComoFunciona() {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
-      <section className="w-full py-[clamp(2rem,4vw,3rem)] bg-primary text-on-primary">
+      <section className="w-full py-[clamp(2rem,4vw,3rem)] bg-secondary-container text-on-surface">
         <div className="w-full px-[clamp(18px,2.95vw,50px)] flex flex-col md:flex-row items-center justify-between gap-6" data-reveal>
-          <div className="max-w-xl"><h3 className="font-bold text-[26px]">Empieza a maximizar el valor de tu afiliación hoy</h3><p className="text-on-primary-container text-[16px] mt-1">Descubre todas las ofertas disponibles o súmate como aliado para conectar con el empresariado más consolidado.</p></div>
+          <div className="max-w-xl"><h3 className="font-bold text-[26px]">Empieza a maximizar el valor de tu afiliación hoy</h3><p className="text-tertiary text-[16px] mt-1">Descubre todas las ofertas disponibles o súmate como aliado para conectar con el empresariado más consolidado.</p></div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <Link to="/catalogo" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-surface-container-lowest text-primary font-bold text-[16px] hover:bg-surface-container-low transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring inline-flex items-center">Ver Directorio de Convenios</Link>
-            <Link to="/afiliate" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-primary-container border border-white/20 text-on-primary font-bold text-[16px] hover:bg-on-primary-fixed-variant transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring inline-flex items-center">Unirme a la Red</Link>
+            <Link to="/catalogo" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-surface-container-lowest text-primary font-bold text-[16px] hover:bg-surface-container-low transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring inline-flex items-center">Ver Directorio de Convenios</Link>
+            <Link to="/afiliate" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-primary text-on-primary border border-primary font-bold text-[16px] hover:bg-primary-container transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring inline-flex items-center">Unirme a la Red</Link>
           </div>
         </div>
       </section>
