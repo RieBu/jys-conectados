@@ -32,7 +32,7 @@
   ::-webkit-scrollbar { display: none; }
   /* Focus visible system - Trust & Authority accessibility */
   :focus-visible {
-    outline: 2px solid #D90429;
+    outline: 2px solid #f10505;
     outline-offset: 2px;
   }
   /* Accessible skip link */
@@ -132,7 +132,7 @@
 
   /* Focus ring utility for custom components */
   .focus-ring:focus-visible {
-    box-shadow: 0 0 0 3px rgba(217, 4, 41, 0.18);
+    box-shadow: 0 0 0 3px rgba(241, 5, 5, 0.18);
   }
 
   /* Shine sweep for primary CTAs - diagonal light on hover */
@@ -193,18 +193,18 @@
   width: 100%;
   height: 100%;
 }
-.iso-side { fill: #ac001e; transition: fill 300ms linear 0s; }
-.iso-side-back { fill: #7a0016; }
-.iso-top { fill: #d90429; transition: fill 300ms linear 0s; }
-.iso-play-shape { fill: #ac001e; }
+.iso-side { fill: #c40404; transition: fill 300ms linear 0s; }
+.iso-side-back { fill: #8f0303; }
+.iso-top { fill: #f10505; transition: fill 300ms linear 0s; }
+.iso-play-shape { fill: #c40404; }
 .iso-glow,
 .iso-glow-strong { opacity: 0; transition: opacity 300ms linear 0s; }
 .iso-play:hover .iso-glow { opacity: 0.5; }
 .iso-play:hover .iso-glow-strong { opacity: 1; }
-.iso-play:hover .iso-top { fill: #ac001e; }
-.iso-play:hover .iso-side { fill: #930018; }
+.iso-play:hover .iso-top { fill: #c40404; }
+.iso-play:hover .iso-side { fill: #a80303; }
 .iso-play:focus-visible .iso-top { stroke: #ffffff; stroke-width: 2px; }
-.iso-play:active .iso-top { fill: #ff6b7d; }
+.iso-play:active .iso-top { fill: #ff6b6b; }
 
 /* ---- Gradient border glow on hover (Pilares) ---- */
 .glow-border { position: relative; }
@@ -214,7 +214,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(135deg, #ac001e, #fea619, #283044);
+  background: linear-gradient(135deg, #c40404, #fea619, #283044);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -276,7 +276,7 @@
 
 /* Convenio card - borde/ring con el color dominante de cada imagen */
 .convenio-card {
-  --card-color: #ac001e;
+  --card-color: #c40404;
   border-color: color-mix(in srgb, var(--card-color) 55%, transparent);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--card-color) 20%, transparent);
   transition: box-shadow 0.25s var(--ease-out), transform 0.25s var(--ease-out);
@@ -299,12 +299,12 @@
 
 /* Botón 'Ver Detalle' - sólido rojo de marca con texto blanco */
 .convenio-card-cta {
-  background: #d90429;
+  background: #f10505;
   color: #fff;
-  box-shadow: 0 4px 12px -6px rgba(217, 4, 41, 0.55);
+  box-shadow: 0 4px 12px -6px rgba(241, 5, 5, 0.55);
   transition: background 0.2s var(--ease-out), transform 0.2s var(--ease-out);
 }
 .convenio-card-cta:hover {
-  background: #ac001e;
+  background: #c40404;
   transform: translateY(-1px);
 }
