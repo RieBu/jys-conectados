@@ -23,7 +23,7 @@ export default function Nosotros() {
                 <span className="material-symbols-outlined text-2xl" aria-hidden>workspace_premium</span>
               </div>
               <div>
-                <div className="font-bold text-on-surface text-[18px]">+14 Años</div>
+                <div className="font-bold text-on-surface text-[18px]">+15 Años</div>
                 <div className="text-[13px] text-tertiary">De experiencia acompañando empresas</div>
               </div>
             </div>
@@ -33,7 +33,6 @@ export default function Nosotros() {
         {/* Nuestra Historia */}
         <section aria-labelledby="historia-title" className="mb-8 animate-fadeUp delay-100">
           <div className="bg-surface-container-lowest rounded-2xl shadow-sm border border-surface-container p-6 md:p-10 relative overflow-hidden">
-            <div className="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none" aria-hidden></div>
             <div className="relative">
               <div className="flex items-center gap-2 mb-2 text-primary text-[13px] uppercase font-bold tracking-widest">
                 <span className="material-symbols-outlined text-base" aria-hidden>auto_stories</span>Nuestra Historia
@@ -49,7 +48,7 @@ export default function Nosotros() {
                   Entendemos que las grandes empresas no solo requieren un equipo que gestione sus números o cumpla con las obligaciones tributarias, sino que necesitan un aliado estratégico que abarque todas las dimensiones de su operación. Esto incluye desde la planificación financiera y la optimización administrativa, hasta la implementación de estrategias laborales, comerciales y de marketing que aseguren la rentabilidad, sostenibilidad y crecimiento continuo.
                 </p>
                 <p>
-                  Con más de 14 años de experiencia, hemos trabajado junto a empresas de diversas industrias, adaptándonos a sus metas y necesidades particulares. Nos enorgullece ser parte de su evolución y éxito, estableciendo relaciones duraderas basadas en confianza, resultados tangibles y un compromiso constante por su progreso. En JyS, no solo brindamos asesoría; somos el socio estratégico que las grandes empresas necesitan para conquistar nuevos horizontes.
+                  Con más de 15 años de experiencia, hemos trabajado junto a empresas de diversas industrias, adaptándonos a sus metas y necesidades particulares. Nos enorgullece ser parte de su evolución y éxito, estableciendo relaciones duraderas basadas en confianza, resultados tangibles y un compromiso constante por su progreso. En JyS, no solo brindamos asesoría; somos el socio estratégico que las grandes empresas necesitan para conquistar nuevos horizontes.
                 </p>
               </div>
             </div>
@@ -58,24 +57,22 @@ export default function Nosotros() {
 
         {/* Misión + Visión */}
         <section aria-labelledby="proposito-title" className="grid grid-cols-1 lg:grid-cols-2 gap-[clamp(1rem,2vw,1.5rem)] mb-8">
-          <article className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-inverse-surface to-tertiary text-inverse-on-surface shadow-md flex flex-col justify-between relative overflow-hidden border border-white/10" data-reveal>
-            <div className="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none" aria-hidden></div>
+          <article className="p-6 md:p-8 rounded-2xl bg-secondary-container text-on-surface shadow-sm flex flex-col justify-between relative overflow-hidden border border-secondary-fixed-dim" data-reveal>
             <div className="relative">
-              <div className="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-5 border border-secondary-fixed-dim">
+              <div className="w-12 h-12 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center mb-5 border border-secondary-fixed-dim">
                 <span className="material-symbols-outlined text-2xl" aria-hidden>flag</span>
               </div>
-              <div className="text-[13px] text-secondary-fixed-dim uppercase tracking-widest font-bold mb-1">Misión</div>
-              <h3 className="font-bold text-[22px] text-inverse-on-surface mb-3 leading-snug">
+              <div className="text-[13px] text-primary uppercase tracking-widest font-bold mb-1">Misión</div>
+              <h3 className="font-bold text-[22px] text-on-surface mb-3 leading-snug">
                 Facilitar y consolidar la actividad de nuestros clientes
               </h3>
-              <p className="text-[16px] text-tertiary-fixed-dim leading-relaxed">
+              <p className="text-[16px] text-tertiary leading-relaxed">
                 Nuestro trabajo consiste en facilitar la actividad de nuestros clientes, comprendiendo sus necesidades y brindando asesoría personalizada a fin de que logren consolidarse.
               </p>
             </div>
           </article>
 
           <article className="p-6 md:p-8 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col justify-between relative overflow-hidden border border-surface-container" data-reveal data-reveal-delay="120">
-            <div className="absolute -left-10 -top-10 w-44 h-44 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none" aria-hidden></div>
             <div className="relative">
               <div className="w-12 h-12 rounded-xl bg-primary-fixed text-primary flex items-center justify-center mb-5 border border-primary-fixed-dim">
                 <span className="material-symbols-outlined text-2xl" aria-hidden>visibility</span>
