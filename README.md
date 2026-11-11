@@ -19,7 +19,7 @@ pnpm preview
 Para simular la subcarpeta de GitHub Pages:
 
 ```bash
-VITE_BASE=/jys-conecta/ pnpm build
+VITE_BASE=/jys-conectados/ pnpm build
 pnpm preview
 ```
 
@@ -27,6 +27,6 @@ pnpm preview
 
 El workflow `.github/workflows/deploy.yml` publica en GitHub Pages al hacer push a `main`.
 
-- URL: `https://riebu.github.io/jys-conecta/`
+- URL: `https://jysasesoriaperu.com/jys-conectados/`
 - El build copia `index.html` a `404.html` para permitir rutas directas.
 - El sitio incluye `noindex` y `robots.txt` para evitar indexación en buscadores.
