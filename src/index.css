@@ -24,10 +24,18 @@
     padding: 0;
   }
   body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background: #faf8ff;
-    color: #131b2e;
+    font-family: "Indivisible", "Source Sans 3", sans-serif;
+    background: #fcfcfc;
+    color: #222121;
     overscroll-behavior: none;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Dagny Pro", "Manrope", sans-serif;
+    font-weight: 800;
+  }
+  ::selection {
+    background: #f10505;
+    color: #ffffff;
   }
   ::-webkit-scrollbar { display: none; }
   /* Focus visible system - Trust & Authority accessibility */
@@ -40,7 +48,7 @@
     position: absolute;
     top: -100%;
     left: 1rem;
-    background: #131b2e;
+    background: #222121;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -135,26 +143,7 @@
     box-shadow: 0 0 0 3px rgba(241, 5, 5, 0.18);
   }
 
-  /* Shine sweep for primary CTAs - diagonal light on hover */
-  .btn-shine {
-    position: relative;
-    overflow: hidden;
-  }
-  .btn-shine::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.35) 50%, transparent 100%);
-    transform: skewX(-20deg);
-    transition: left 0.6s var(--ease-out);
-    pointer-events: none;
-  }
-  .btn-shine:hover::before {
-    left: 150%;
-  }
+  /* Shine sweep removed for the sober brand language */
 
   /* Staggered card entrance - iOS-like spring */
   @keyframes cardIn {
@@ -206,35 +195,15 @@
 .iso-play:focus-visible .iso-top { stroke: #ffffff; stroke-width: 2px; }
 .iso-play:active .iso-top { fill: #ff6b6b; }
 
-/* ---- Gradient border glow on hover (Pilares) ---- */
-.glow-border { position: relative; }
-.glow-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 2px;
-  background: linear-gradient(135deg, #c40404, #fea619, #283044);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.3s var(--ease-out);
-  pointer-events: none;
+/* ---- Card hover accent (brand red) ---- */
+.glow-border {
+  position: relative;
+  transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
 }
-.glow-border::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(ellipse at 50% 0%, rgba(254, 166, 25, 0.12), transparent 60%);
-  opacity: 0;
-  transition: opacity 0.3s var(--ease-out);
-  pointer-events: none;
+.glow-border:hover {
+  border-color: #f10505;
+  box-shadow: 0 12px 28px -20px rgba(241, 5, 5, 0.45);
 }
-.glow-border:hover::before,
-.glow-border:hover::after { opacity: 1; }
 
 /* ---- Social icon fill-up + rotateY (Footer) ---- */
 .social {
@@ -243,12 +212,12 @@
   display: grid;
   place-items: center;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #f0f0f0;
+  border: 1px solid #e5e5e5;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  color: #eef0ff;
+  color: #222121;
   transition: color 0.4s;
 }
 .social svg {
