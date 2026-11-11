@@ -239,7 +239,7 @@ export default function Catalogo() {
               <div className="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold border border-secondary-fixed-dim"><span className="material-symbols-outlined text-2xl" aria-hidden>handshake</span></div>
               <div className="space-y-1"><span className="text-[13px] text-secondary font-bold uppercase tracking-wider">¿Eres proveedor de confianza?</span><h3 className="font-bold text-[18px] text-on-surface">Publica tu Beneficio en la Red JyS</h3><p className="text-[15px] text-tertiary">Conecta directamente con más de 650 directores generales, gerentes y propietarios de empresas auditadas.</p></div>
             </div>
-            <div className="pt-6 mt-4"><Link to="/afiliate" className="btn-shine group cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-inverse-surface text-inverse-on-surface text-[14px] font-semibold hover:bg-on-surface transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">Postular como Aliado JyS <span className="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_outward</span></Link></div>
+            <div className="pt-6 mt-4"><Link to="/afiliate" className="btn-shine group cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-primary text-on-primary text-[14px] font-semibold hover:bg-primary-container transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">Postular como Aliado JyS <span className="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_outward</span></Link></div>
           </div>
         </div>
 
@@ -267,7 +267,7 @@ export default function Catalogo() {
               <div className="flex items-start gap-3 sm:gap-4 min-w-0 flex-1">
                 <ProviderMark s={selected} size="lg" />
                 <div className="space-y-1 min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2"><span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[13px] sm:text-xs font-bold border border-secondary-fixed-dim"><span className="material-symbols-outlined text-xs" aria-hidden>verified</span> CONVENIO EXCLUSIVO RED JYS</span><span className="text-[13px] sm:text-xs text-tertiary truncate">{CATEGORY_LABELS[selected.category] || selected.provider}</span></div>
+                  <div className="flex flex-wrap items-center gap-2"><span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[13px] sm:text-xs font-bold border border-secondary-fixed-dim"><span className="material-symbols-outlined text-xs" aria-hidden>verified</span> CONVENIO EXCLUSIVO RED JyS</span><span className="text-[13px] sm:text-xs text-tertiary truncate">{CATEGORY_LABELS[selected.category] || selected.provider}</span></div>
                   <h2 id="modal-title" className="font-extrabold text-[20px] sm:text-[24px] lg:text-[28px] text-on-surface leading-tight tracking-tight">{selected.title}</h2>
                   <p className="hidden sm:block text-[15px] lg:text-[16px] text-tertiary line-clamp-2">{selected.desc}</p>
                 </div>
@@ -343,7 +343,7 @@ export default function Catalogo() {
               {/* 5. Términos */}
               <section className="space-y-4" aria-label="Términos y condiciones">
                 <SectionTitle icon="info">Términos y Condiciones del Convenio</SectionTitle>
-                <p className="text-[15px] sm:text-[16px] text-tertiary leading-relaxed">Válido exclusivamente para Personas Jurídicas y autónomos con contrato de consultoría activo en JYS Asesoría y Capacitación E.I.R.L. Vigente durante todo el año fiscal 2026. No acumulable con otras promociones del proveedor.</p>
+                <p className="text-[15px] sm:text-[16px] text-tertiary leading-relaxed">Válido exclusivamente para Personas Jurídicas y autónomos con contrato de consultoría activo en JyS Asesoría y Capacitación E.I.R.L. Vigente durante todo el año fiscal 2026. No acumulable con otras promociones del proveedor.</p>
               </section>
 
               {/* 6. Contacto y ubicación */}
