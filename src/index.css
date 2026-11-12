@@ -182,18 +182,18 @@
   width: 100%;
   height: 100%;
 }
-.iso-side { fill: #c40404; transition: fill 300ms linear 0s; }
-.iso-side-back { fill: #8f0303; }
-.iso-top { fill: #f10505; transition: fill 300ms linear 0s; }
-.iso-play-shape { fill: #c40404; }
+.iso-side { fill: #f10505; transition: fill 300ms linear 0s, opacity 300ms linear 0s; }
+.iso-side-back { fill: #f10505; opacity: 0.82; }
+.iso-top { fill: #f10505; transition: fill 300ms linear 0s, opacity 300ms linear 0s; }
+.iso-play-shape { fill: #f10505; }
 .iso-glow,
 .iso-glow-strong { opacity: 0; transition: opacity 300ms linear 0s; }
 .iso-play:hover .iso-glow { opacity: 0.5; }
 .iso-play:hover .iso-glow-strong { opacity: 1; }
-.iso-play:hover .iso-top { fill: #c40404; }
-.iso-play:hover .iso-side { fill: #a80303; }
+.iso-play:hover .iso-top { fill: #f10505; opacity: 0.9; }
+.iso-play:hover .iso-side { fill: #f10505; opacity: 0.9; }
 .iso-play:focus-visible .iso-top { stroke: #ffffff; stroke-width: 2px; }
-.iso-play:active .iso-top { fill: #ff6b6b; }
+.iso-play:active .iso-top { fill: #f10505; opacity: 0.75; }
 
 /* ---- Card hover accent (brand red) ---- */
 .glow-border {
@@ -245,7 +245,7 @@
 
 /* Convenio card - borde/ring con el color dominante de cada imagen */
 .convenio-card {
-  --card-color: #c40404;
+  --card-color: #f10505;
   border-color: color-mix(in srgb, var(--card-color) 55%, transparent);
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--card-color) 20%, transparent);
   transition: box-shadow 0.25s var(--ease-out), transform 0.25s var(--ease-out);
@@ -274,6 +274,7 @@
   transition: background 0.2s var(--ease-out), transform 0.2s var(--ease-out);
 }
 .convenio-card-cta:hover {
-  background: #c40404;
+  background: #f10505;
+  filter: brightness(0.92);
   transform: translateY(-1px);
 }
