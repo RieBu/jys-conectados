@@ -57,16 +57,16 @@ export default function Nosotros() {
 
         {/* Misión + Visión */}
         <section aria-labelledby="proposito-title" className="grid grid-cols-1 lg:grid-cols-2 gap-[clamp(1rem,2vw,1.5rem)] mb-8">
-          <article className="p-6 md:p-8 rounded-2xl bg-secondary-container text-on-surface shadow-sm flex flex-col justify-between relative overflow-hidden border border-secondary-fixed-dim" data-reveal>
+          <article className="p-6 md:p-8 rounded-2xl bg-inverse-surface text-inverse-on-surface shadow-sm flex flex-col justify-between relative overflow-hidden border border-white/15" data-reveal>
             <div className="relative">
-              <div className="w-12 h-12 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center mb-5 border border-secondary-fixed-dim">
+              <div className="w-12 h-12 rounded-xl bg-white/10 text-primary flex items-center justify-center mb-5 border border-white/20">
                 <span className="material-symbols-outlined text-2xl" aria-hidden>flag</span>
               </div>
               <div className="text-[13px] text-primary uppercase tracking-widest font-bold mb-1">Misión</div>
-              <h3 className="font-bold text-[22px] text-on-surface mb-3 leading-snug">
+              <h3 className="font-bold text-[22px] text-inverse-on-surface mb-3 leading-snug">
                 Facilitar y consolidar la actividad de nuestros clientes
               </h3>
-              <p className="text-[16px] text-tertiary leading-relaxed">
+              <p className="text-[16px] text-inverse-on-surface/80 leading-relaxed">
                 Nuestro trabajo consiste en facilitar la actividad de nuestros clientes, comprendiendo sus necesidades y brindando asesoría personalizada a fin de que logren consolidarse.
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function Nosotros() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
-            <Link to="/catalogo" className="btn-shine group cursor-pointer inline-flex items-center gap-2 px-6 py-3 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-semibold text-[16px] hover:bg-primary transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">
+            <Link to="/catalogo" className="btn-shine group cursor-pointer inline-flex items-center gap-2 px-6 py-3 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-semibold text-[16px] hover:brightness-95 transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">
               Ver Catálogo <span className="material-symbols-outlined text-lg transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_forward</span>
             </Link>
             <Link to="/afiliate" className="cursor-pointer inline-flex items-center gap-2 px-6 py-3 min-h-[44px] rounded-xl bg-surface-container text-on-surface font-semibold text-[16px] hover:bg-surface-container-high transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring">

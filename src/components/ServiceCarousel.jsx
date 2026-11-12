@@ -152,7 +152,7 @@ export default function ServiceCarousel({ images = [], title = "" }) {
         <div className="h-1 w-full bg-surface-container-high/70 rounded-full overflow-hidden" aria-hidden>
           <div
             key={current}
-            className="h-full bg-gradient-to-r from-primary-container to-secondary-container animate-carouselProgress"
+            className="h-full bg-gradient-to-r from-primary-container to-primary animate-carouselProgress"
             style={{ animationPlayState: paused ? "paused" : "running" }}
           />
         </div>

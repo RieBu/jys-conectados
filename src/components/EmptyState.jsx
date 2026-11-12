@@ -19,7 +19,7 @@ export default function EmptyState({
             <span className="material-symbols-outlined text-2xl text-primary" aria-hidden>{icon}</span>
           </div>
           <div className="size-14 bg-surface-container-lowest grid place-items-center ring-1 ring-black/[0.08] rounded-2xl relative right-2.5 top-1.5 rotate-6 shadow-lg group-hover:translate-x-5 group-hover:rotate-12 group-hover:-translate-y-0.5 transition duration-500 group-hover:duration-200">
-            <span className="material-symbols-outlined text-2xl text-secondary-container" aria-hidden>{icon}</span>
+            <span className="material-symbols-outlined text-2xl text-primary" aria-hidden>{icon}</span>
           </div>
         </div>
         <h2 className="text-base text-on-surface font-bold">{title}</h2>

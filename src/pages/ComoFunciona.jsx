@@ -53,7 +53,7 @@ export default function ComoFunciona() {
                   La extensión oficial de <strong className="text-on-surface font-semibold">JyS Asesoría y Capacitación</strong> que potencia la sinergia comercial entre clientes calificados, firmas auditoras y aliados estratégicos de primer nivel.
                 </p>
                 <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto mb-10">
-                  <Link to="/catalogo" className="btn-shine group cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-semibold text-[16px] shadow-md hover:bg-primary transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring">
+                  <Link to="/catalogo" className="btn-shine group cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[44px] rounded-xl bg-primary-container text-on-primary font-semibold text-[16px] shadow-md hover:brightness-95 transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring">
                     Explorar Promociones <span className="material-symbols-outlined text-lg transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_forward</span>
                   </Link>
                   <a href="#como-participar" className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[44px] rounded-xl bg-surface-container-high text-on-surface font-semibold text-[16px] hover:bg-surface-container-highest transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring">
@@ -101,13 +101,13 @@ export default function ComoFunciona() {
               <h2 id="pilares-title" className="font-bold text-[30px] lg:text-[34px] text-on-surface">¿En qué consiste JyS Conectados?</h2>
               <p className="text-[17px] text-tertiary mt-2">No somos un tablón público de anuncios. Diseñamos un club empresarial cerrado que une la oferta y la demanda corporativa con el sello de auditoría de JyS Asesoría y Capacitación.</p>
             </div>
-            <div className="flex items-center gap-2 text-on-surface-variant text-[14px] font-semibold"><span className="material-symbols-outlined text-secondary text-base" aria-hidden>verified</span>Modelo de Relacionamiento B2B Exclusivo</div>
+            <div className="flex items-center gap-2 text-on-surface-variant text-[14px] font-semibold"><span className="material-symbols-outlined text-primary text-base" aria-hidden>verified</span>Modelo de Relacionamiento B2B Exclusivo</div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[clamp(1rem,2vw,1.75rem)]">
             {[
               { n: "01", t: "Comunidad Selecta JyS", d: "Conexión directa con una cartera curada de directores, accionistas y gerentes generales pertenecientes a empresas asesoradas activamente por nuestro equipo multidisciplinario.", ic: "groups", bg: "bg-primary-fixed", col: "text-primary", label: "Perfil Auditado" },
-              { n: "02", t: "Tarifas y Convenios Preferenciales", d: "Descuentos reales no indexados al mercado masivo. Cada convenio estipula condiciones de servicio y precio VIP negociadas con anterioridad bajo acuerdo marco.", ic: "price_change", bg: "bg-secondary-fixed", col: "text-secondary", label: "Beneficio de Alto Impacto" },
-              { n: "03", t: "Cero Comisiones Ocultas", d: "JyS Conectados no cobra intermediación a los usuarios finales ni cobra comisiones por transacción. Fomentamos valor genuino y lealtad corporativa dentro del ecosistema.", ic: "balance", bg: "bg-tertiary-fixed", col: "text-on-tertiary-fixed", label: "100% Transparente" },
+              { n: "02", t: "Tarifas y Convenios Preferenciales", d: "Descuentos reales no indexados al mercado masivo. Cada convenio estipula condiciones de servicio y precio VIP negociadas con anterioridad bajo acuerdo marco.", ic: "price_change", bg: "bg-inverse-surface", col: "text-primary", label: "Beneficio de Alto Impacto" },
+              { n: "03", t: "Cero Comisiones Ocultas", d: "JyS Conectados no cobra intermediación a los usuarios finales ni cobra comisiones por transacción. Fomentamos valor genuino y lealtad corporativa dentro del ecosistema.", ic: "balance", bg: "bg-tertiary-fixed", col: "text-primary", label: "100% Transparente" },
             ].map((p, i) => (
               <article key={p.n} data-reveal data-reveal-delay={i * 90} className="group glow-border relative bg-surface-container-lowest p-6 rounded-2xl shadow-sm border border-surface-container hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col justify-between cursor-default">
                 <div>
@@ -129,7 +129,7 @@ export default function ComoFunciona() {
       <section id="como-participar" aria-labelledby="participar-title" className="w-full py-[clamp(2.5rem,5vw,6rem)] bg-surface">
         <div className="w-full px-[clamp(18px,2.95vw,50px)]">
           <div className="text-center max-w-3xl mx-auto mb-12" data-reveal>
-            <span className="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[13px] font-bold uppercase tracking-wider border border-secondary-fixed-dim">Mecanismo Paso a Paso</span>
+            <span className="px-3 py-1 rounded-full bg-inverse-surface text-inverse-on-surface text-[13px] font-bold uppercase tracking-wider border border-white/20">Mecanismo Paso a Paso</span>
             <h2 id="participar-title" className="font-bold text-[30px] lg:text-[40px] text-on-surface mt-3 tracking-tight">¿Cómo Participas en el Ecosistema?</h2>
             <p className="text-[17px] text-tertiary mt-2">Dos rutas diseñadas para optimizar el valor mutuo: si buscas maximizar la eficiencia de tus compras de servicios o si deseas convertirte en un proveedor preferente.</p>
           </div>
@@ -162,7 +162,7 @@ export default function ComoFunciona() {
             </article>
 
             <article className="bg-surface-container-lowest p-6 rounded-2xl shadow-md border border-surface-container relative overflow-hidden hover:shadow-lg transition-shadow duration-200" data-reveal data-reveal-delay="120">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-secondary-container" aria-hidden></div>
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-inverse-surface" aria-hidden></div>
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-3"><div className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center border border-secondary/10"><span className="material-symbols-outlined" aria-hidden>corporate_fare</span></div><div><span className="text-[13px] text-secondary font-bold uppercase tracking-wider">Ruta Proveedor & Aliado</span><h3 className="font-bold text-[20px] text-on-surface">Para Empresas y Profesionales</h3></div></div>
               </div>
@@ -175,7 +175,7 @@ export default function ComoFunciona() {
                   { n: 5, t: "¡Promocionamos tu negocio!", d: "Publicamos el material audiovisual en los canales de JyS Conectados para difundir tu beneficio.", active: true },
                 ].map((s) => (
                   <div key={s.n} className="flex items-start gap-3">
-                    <div className={`w-8 h-8 rounded-full font-bold flex items-center justify-center shrink-0 mt-0.5 text-[15px] border ${s.active ? "bg-secondary-container text-on-secondary-container border-secondary-fixed-dim" : "bg-surface-container-high text-on-surface border-surface-container-highest"}`}>{s.n}</div>
+                    <div className={`w-8 h-8 rounded-full font-bold flex items-center justify-center shrink-0 mt-0.5 text-[15px] border ${s.active ? "bg-inverse-surface text-inverse-on-surface border-white/20" : "bg-surface-container-high text-on-surface border-surface-container-highest"}`}>{s.n}</div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-bold text-on-surface text-[16px]">{s.t}</h4><p className="text-[15px] text-tertiary mt-1">{s.d}</p>
                       {s.check && <div className="flex items-center gap-1.5 mt-2 text-tertiary text-[13px]"><span className="material-symbols-outlined text-sm text-secondary" aria-hidden>verified</span>Evaluación en 48 a 72 horas hábiles</div>}
@@ -183,9 +183,9 @@ export default function ComoFunciona() {
                   </div>
                 ))}
               </div>
-              <div className="mt-6 bg-secondary-fixed/40 p-3 rounded-xl flex items-center justify-between border border-secondary-fixed-dim/30">
-                <div className="flex items-center gap-2 text-on-secondary-fixed text-[13px] font-bold"><span className="material-symbols-outlined text-base" aria-hidden>rocket_launch</span>Canal comercial B2B de alta conversión</div>
-                <Link to="/afiliate" className="cursor-pointer font-bold text-on-secondary-fixed-variant text-[13px] hover:underline flex items-center gap-1 focus-ring rounded px-1">Postular mi Empresa <span className="material-symbols-outlined text-sm" aria-hidden>chevron_right</span></Link>
+              <div className="mt-6 bg-inverse-surface p-3 rounded-xl flex items-center justify-between border border-white/15">
+                <div className="flex items-center gap-2 text-inverse-on-surface text-[13px] font-bold"><span className="material-symbols-outlined text-base text-primary" aria-hidden>rocket_launch</span>Canal comercial B2B de alta conversión</div>
+                <Link to="/afiliate" className="cursor-pointer font-bold text-inverse-on-surface text-[13px] hover:text-primary transition-colors duration-200 flex items-center gap-1 focus-ring rounded px-1">Postular mi Empresa <span className="material-symbols-outlined text-sm" aria-hidden>chevron_right</span></Link>
               </div>
             </article>
           </div>
@@ -201,18 +201,18 @@ export default function ComoFunciona() {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-[clamp(0.75rem,1.5vw,1.25rem)]">
             {[
-              { ic: "terminal", t: "Tecnología & TI", n: "2 convenios", bg: "bg-secondary-fixed text-primary" },
-              { ic: "campaign", t: "Marketing & Branding", n: "1 convenio", bg: "bg-tertiary-fixed text-tertiary" },
-              { ic: "architecture", t: "Diseño & Construcción", n: "2 convenios", bg: "bg-tertiary-fixed text-tertiary" },
-              { ic: "domain", t: "Inmobiliaria", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
-              { ic: "visibility", t: "Salud & Óptica", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
-              { ic: "savings", t: "Finanzas & Créditos", n: "1 convenio", bg: "bg-secondary-fixed text-primary" },
-              { ic: "restaurant", t: "Gastronomía", n: "1 convenio", bg: "bg-tertiary-fixed text-tertiary" },
-              { ic: "hotel", t: "Alojamiento & Turismo", n: "1 convenio", bg: "bg-primary-fixed text-primary" },
-              { ic: "child_care", t: "Juego & Familia", n: "1 convenio", bg: "bg-secondary-fixed text-primary" },
+              { ic: "terminal", t: "Tecnología & TI", n: "2 convenios", bg: "bg-inverse-surface text-primary" },
+              { ic: "campaign", t: "Marketing & Branding", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "architecture", t: "Diseño & Construcción", n: "2 convenios", bg: "bg-inverse-surface text-primary" },
+              { ic: "domain", t: "Inmobiliaria", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "visibility", t: "Salud & Óptica", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "savings", t: "Finanzas & Créditos", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "restaurant", t: "Gastronomía", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "hotel", t: "Alojamiento & Turismo", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
+              { ic: "child_care", t: "Juego & Familia", n: "1 convenio", bg: "bg-inverse-surface text-primary" },
             ].map((c) => (
               <Link key={c.t} to="/catalogo" className="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container hover:shadow-sm hover:-translate-y-0.5 transition-all duration-200 flex flex-col items-center text-center focus-ring">
-                <div className={`w-12 h-12 rounded-full ${c.bg} flex items-center justify-center mb-2 border border-black/5`}><span className="material-symbols-outlined" aria-hidden>{c.ic}</span></div>
+                <div className={`w-12 h-12 rounded-full ${c.bg} flex items-center justify-center mb-2 border border-white/10`}><span className="material-symbols-outlined" aria-hidden>{c.ic}</span></div>
                 <span className="font-bold text-on-surface text-[15px]">{c.t}</span><span className="text-[14px] text-tertiary mt-1">{c.n}</span>
               </Link>
             ))}
@@ -250,12 +250,12 @@ export default function ComoFunciona() {
           </div>
       </section>
 
-      <section className="w-full py-[clamp(2rem,4vw,3rem)] bg-secondary-container text-on-surface">
+      <section className="w-full py-[clamp(2rem,4vw,3rem)] bg-inverse-surface text-inverse-on-surface">
         <div className="w-full px-[clamp(18px,2.95vw,50px)] flex flex-col md:flex-row items-center justify-between gap-6" data-reveal>
-          <div className="max-w-xl"><h3 className="font-bold text-[26px]">Empieza a maximizar el valor de tu afiliación hoy</h3><p className="text-tertiary text-[16px] mt-1">Descubre todas las ofertas disponibles o súmate como aliado para conectar con el empresariado más consolidado.</p></div>
+          <div className="max-w-xl"><h3 className="font-bold text-[26px]">Empieza a maximizar el valor de tu afiliación hoy</h3><p className="text-inverse-on-surface/80 text-[16px] mt-1">Descubre todas las ofertas disponibles o súmate como aliado para conectar con el empresariado más consolidado.</p></div>
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <Link to="/catalogo" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-surface-container-lowest text-primary font-bold text-[16px] hover:bg-surface-container-low transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring inline-flex items-center">Ver Directorio de Convenios</Link>
-            <Link to="/afiliate" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-primary text-on-primary border border-primary font-bold text-[16px] hover:bg-primary-container transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring inline-flex items-center">Unirme a la Red</Link>
+            <Link to="/afiliate" className="cursor-pointer px-6 py-3 min-h-[44px] rounded-xl bg-primary text-on-primary border border-primary font-bold text-[16px] hover:brightness-95 transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring inline-flex items-center">Unirme a la Red</Link>
           </div>
         </div>
       </section>

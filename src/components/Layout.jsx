@@ -65,7 +65,7 @@ export function Header() {
             <a href="https://wa.me/51922506294" target="_blank" rel="noreferrer" className="cursor-pointer inline-flex items-center min-h-[44px] px-4 py-2 rounded-xl bg-surface-container text-on-surface font-semibold text-[15px] hover:bg-surface-container-high transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring">
               <span className="material-symbols-outlined text-base mr-1.5" aria-hidden>support_agent</span> Soporte VIP
             </a>
-            <Link to="/afiliate" className="btn-shine group cursor-pointer inline-flex items-center min-h-[44px] px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-semibold text-[15px] hover:bg-primary transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring">
+            <Link to="/afiliate" className="btn-shine group cursor-pointer inline-flex items-center min-h-[44px] px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-semibold text-[15px] hover:brightness-95 transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-sm focus-ring">
               Activar Afiliación <span className="material-symbols-outlined text-sm ml-1 transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_forward</span>
             </Link>
           </div>
@@ -102,7 +102,7 @@ export function Footer() {
           <div className="md:col-span-2 space-y-3">
             <div className="flex items-center gap-3">
               <img src={`${BASE}logo-conectados.png`} alt="JyS Conectados" className="h-9 w-auto object-contain" decoding="async" />
-              <span className="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[13px] font-bold w-fit">Red Corporativa</span>
+              <span className="px-2 py-0.5 rounded-full bg-inverse-surface text-inverse-on-surface text-[13px] font-bold w-fit">Red Corporativa</span>
             </div>
             <p className="text-tertiary text-[15px] max-w-md leading-relaxed">Ecosistema de vinculación, alianzas de alto impacto y asesoría integral para ejecutivos, directores y empresas afiliadas a JyS Asesoría y Capacitación.</p>
             <p className="text-tertiary text-[15px]">Razón Social: JyS Asesoría y Capacitación E.I.R.L. • RUC: 20608400959</p>

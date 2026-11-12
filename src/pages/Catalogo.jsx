@@ -79,7 +79,7 @@ function ServiceCard({ s, i, onOpen }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent" aria-hidden></div>
         <div className="absolute top-3 left-3 right-3 flex items-start justify-between">
-          <span className={`px-2.5 py-1 rounded-full text-[13px] font-bold flex items-center gap-1 border backdrop-blur-md ${s.featured ? "bg-secondary-fixed/95 text-on-secondary-fixed border-secondary-fixed-dim" : "bg-surface-container-lowest/90 text-on-surface-variant border-surface-container"}`}>{s.featured && <span className="material-symbols-outlined text-xs" aria-hidden>verified</span>}{s.badge}</span>
+          <span className={`px-2.5 py-1 rounded-full text-[13px] font-bold flex items-center gap-1 border backdrop-blur-md ${s.featured ? "bg-inverse-surface/95 text-inverse-on-surface border-white/20" : "bg-surface-container-lowest/90 text-on-surface-variant border-surface-container"}`}>{s.featured && <span className="material-symbols-outlined text-xs" aria-hidden>verified</span>}{s.badge}</span>
           <span className={`px-2.5 py-1 rounded-full text-[13px] font-bold border backdrop-blur-md ${s.featured ? "bg-primary-fixed/95 text-on-primary-fixed border-primary-fixed-dim" : "bg-primary-fixed/95 text-on-primary-fixed border-primary-fixed-dim"}`}>{s.discount}</span>
         </div>
         <div className="absolute bottom-3 left-3 flex items-center gap-1.5 px-2 py-1 rounded-full bg-inverse-surface/70 backdrop-blur-md text-inverse-on-surface text-[13px] font-semibold border border-white/10">
@@ -92,7 +92,7 @@ function ServiceCard({ s, i, onOpen }) {
       <div className="p-6 flex flex-col flex-1 space-y-4">
         <div className="flex items-center gap-3">
           <ProviderMark s={s} />
-          <div className="min-w-0"><p className="text-[14px] font-semibold text-tertiary truncate">{s.provider}</p>{s.rating && s.reviews ? (<div className="flex items-center gap-1 text-secondary min-h-[20px]" aria-label={`Calificación ${s.rating} de 5`}><span className="material-symbols-outlined text-sm" aria-hidden>star</span><span className="text-[13px] font-bold">{s.rating}</span><span className="text-[14px] text-tertiary">({s.reviews})</span></div>) : (<div className="flex items-center gap-1 text-tertiary min-h-[20px]"><span className="material-symbols-outlined text-sm text-secondary-container" aria-hidden>verified</span><span className="text-[13px] font-medium">Convenio verificado JyS</span></div>)}</div>
+          <div className="min-w-0"><p className="text-[14px] font-semibold text-tertiary truncate">{s.provider}</p>{s.rating && s.reviews ? (<div className="flex items-center gap-1 text-secondary min-h-[20px]" aria-label={`Calificación ${s.rating} de 5`}><span className="material-symbols-outlined text-sm" aria-hidden>star</span><span className="text-[13px] font-bold">{s.rating}</span><span className="text-[14px] text-tertiary">({s.reviews})</span></div>) : (<div className="flex items-center gap-1 text-tertiary min-h-[20px]"><span className="material-symbols-outlined text-sm text-primary" aria-hidden>verified</span><span className="text-[13px] font-medium">Convenio verificado JyS</span></div>)}</div>
         </div>
         <div className="space-y-1">
           <h3 className="font-bold text-[18px] text-on-surface group-hover:text-primary transition-colors duration-200 leading-tight line-clamp-2 min-h-[2.5em]">{s.title}</h3>
@@ -100,7 +100,7 @@ function ServiceCard({ s, i, onOpen }) {
         </div>
         <ul className="space-y-1.5 pt-1">
           {s.bullets.map((b) => (
-            <li key={b} className="flex items-center gap-2 text-[14px] text-on-surface-variant min-w-0"><span className="material-symbols-outlined text-secondary-container text-base shrink-0" aria-hidden>check_circle</span><span className="truncate min-w-0">{b}</span></li>
+            <li key={b} className="flex items-center gap-2 text-[14px] text-on-surface-variant min-w-0"><span className="material-symbols-outlined text-primary text-base shrink-0" aria-hidden>check_circle</span><span className="truncate min-w-0">{b}</span></li>
           ))}
         </ul>
         <div className="pt-4 mt-auto flex items-center justify-between border-t border-surface-container/50">
@@ -169,7 +169,6 @@ export default function Catalogo() {
       {/* Header - semantic with search role */}
       <section aria-labelledby="catalog-title" className="relative w-full overflow-hidden bg-surface-container-lowest py-[clamp(1.5rem,3vw,2.5rem)] border-b border-surface-container">
         <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none animate-float" aria-hidden></div>
-        <div className="absolute left-1/3 -bottom-16 w-80 h-80 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none animate-float-slow" aria-hidden></div>
         <div className="w-full px-[clamp(18px,2.95vw,50px)] relative z-10 flex flex-col gap-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4" data-reveal>
             <div className="space-y-2 max-w-2xl">
@@ -236,10 +235,10 @@ export default function Catalogo() {
           {/* CTA Card - Conversion-Optimized */}
           <div className="relative flex flex-col justify-between bg-gradient-to-br from-surface-container to-surface-container-high rounded-xl p-6 shadow-sm overflow-hidden">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold border border-secondary-fixed-dim"><span className="material-symbols-outlined text-2xl" aria-hidden>handshake</span></div>
+              <div className="w-12 h-12 rounded-xl bg-inverse-surface text-primary flex items-center justify-center font-bold border border-white/20"><span className="material-symbols-outlined text-2xl" aria-hidden>handshake</span></div>
               <div className="space-y-1"><span className="text-[13px] text-secondary font-bold uppercase tracking-wider">¿Eres proveedor de confianza?</span><h3 className="font-bold text-[18px] text-on-surface">Publica tu Beneficio en la Red JyS</h3><p className="text-[15px] text-tertiary">Conecta directamente con más de 650 directores generales, gerentes y propietarios de empresas auditadas.</p></div>
             </div>
-            <div className="pt-6 mt-4"><Link to="/afiliate" className="btn-shine group cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-primary text-on-primary text-[14px] font-semibold hover:bg-primary-container transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">Postular como Aliado JyS <span className="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_outward</span></Link></div>
+            <div className="pt-6 mt-4"><Link to="/afiliate" className="btn-shine group cursor-pointer w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-primary text-on-primary text-[14px] font-semibold hover:brightness-95 transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] shadow-md focus-ring">Postular como Aliado JyS <span className="material-symbols-outlined text-base transition-transform duration-200 group-hover:translate-x-1" aria-hidden>arrow_outward</span></Link></div>
           </div>
         </div>
 
@@ -262,12 +261,12 @@ export default function Catalogo() {
         <div className="fixed inset-0 z-[var(--z-modal)] flex items-center justify-center p-3 sm:p-4 lg:p-6 overflow-y-auto overscroll-contain bg-inverse-surface/60 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div className="fixed inset-0" onClick={() => setModal(null)} aria-hidden></div>
           <div className="relative w-full sm:w-[95vw] md:w-[92vw] lg:w-[92vw] xl:w-[88vw] max-w-[1120px] bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden z-10 max-h-[96vh] sm:max-h-[92vh] flex flex-col animate-fadeUp">
-            <div className="h-2 w-full bg-gradient-to-r from-primary-container via-secondary-container to-primary shrink-0" aria-hidden></div>
+            <div className="h-2 w-full bg-gradient-to-r from-primary-container via-primary to-primary shrink-0" aria-hidden></div>
             <div className="px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-start justify-between gap-3 sm:gap-4 bg-surface-container-lowest shrink-0 border-b border-surface-container/60">
               <div className="flex items-start gap-3 sm:gap-4 min-w-0 flex-1">
                 <ProviderMark s={selected} size="lg" />
                 <div className="space-y-1 min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2"><span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[13px] sm:text-xs font-bold border border-secondary-fixed-dim"><span className="material-symbols-outlined text-xs" aria-hidden>verified</span> CONVENIO EXCLUSIVO RED JyS</span><span className="text-[13px] sm:text-xs text-tertiary truncate">{CATEGORY_LABELS[selected.category] || selected.provider}</span></div>
+                  <div className="flex flex-wrap items-center gap-2"><span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-inverse-surface text-inverse-on-surface text-[13px] sm:text-xs font-bold border border-white/20"><span className="material-symbols-outlined text-xs" aria-hidden>verified</span> CONVENIO EXCLUSIVO RED JyS</span><span className="text-[13px] sm:text-xs text-tertiary truncate">{CATEGORY_LABELS[selected.category] || selected.provider}</span></div>
                   <h2 id="modal-title" className="font-extrabold text-[20px] sm:text-[24px] lg:text-[28px] text-on-surface leading-tight tracking-tight">{selected.title}</h2>
                   <p className="hidden sm:block text-[15px] lg:text-[16px] text-tertiary line-clamp-2">{selected.desc}</p>
                 </div>
@@ -382,7 +381,7 @@ export default function Catalogo() {
               <div className="flex items-center gap-2 text-tertiary w-full lg:w-auto"><span className="material-symbols-outlined text-lg" aria-hidden>verified</span><span className="text-[15px] sm:text-[16px]">La empresa validará tu condición de cliente activo con JyS antes de aplicar el beneficio.</span></div>
               <div className="flex items-center gap-2.5 w-full lg:w-auto">
                 <a href={`tel:${selected.phone.replace(/\s/g, "")}`} className="cursor-pointer flex-1 lg:flex-initial inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-3 min-h-[46px] rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high text-[15px] sm:text-[16px] font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring"><span className="material-symbols-outlined text-base" aria-hidden>call</span>Llamar a {selected.provider}</a>
-                <a href={whatsappUrl} target="_blank" rel="noreferrer" className="btn-shine cursor-pointer flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3 min-h-[46px] rounded-xl font-bold text-[15px] sm:text-[16px] shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring bg-primary-container text-on-primary hover:bg-primary border border-primary-container"><span className="material-symbols-outlined text-base" aria-hidden>chat</span>WhatsApp a {selected.provider}</a>
+                <a href={whatsappUrl} target="_blank" rel="noreferrer" className="btn-shine cursor-pointer flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3 min-h-[46px] rounded-xl font-bold text-[15px] sm:text-[16px] shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.97] focus-ring bg-primary-container text-on-primary hover:brightness-95 border border-primary-container"><span className="material-symbols-outlined text-base" aria-hidden>chat</span>WhatsApp a {selected.provider}</a>
               </div>
             </div>
           </div>
